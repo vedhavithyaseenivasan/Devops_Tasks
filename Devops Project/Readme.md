@@ -71,7 +71,7 @@ sudo apt update
 sudo apt install prometheus
 sudo systemctl start prometheus
 sudo systemctl enable prometheus
-exit
+```
 
 ### 2. Install Grafana
 ```bash
@@ -81,17 +81,19 @@ sudo apt-get update
 sudo apt-get install grafana
 sudo systemctl start grafana-server
 sudo systemctl enable grafana-server
-
+```
 
 ### 3. Install Node Exporter
 ```bash
 tar -xvf node_exporter-*.tar.gz
 sudo mv node_exporter-*/node_exporter /usr/local/bin/
 nohup /usr/local/bin/node_exporter
+```
 
 ### 4. Configure Prometheus to Scrape Node Exporter
 ```bash
 sudo nano /etc/prometheus/prometheus.yml
+```
 
 ### Add:
 ```bash
@@ -100,10 +102,12 @@ scrape_configs:
   - job_name: 'node_exporter'
     static_configs:
       - targets: ['localhost:9100']
+```
 
 ### Restart Prometheus:
 ```bash
 sudo systemctl restart prometheus
+```
 
 ### 5. Set Up Grafana Dashboard
 Open: http://localhost:3000
