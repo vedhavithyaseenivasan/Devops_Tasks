@@ -71,6 +71,7 @@ sudo apt update
 sudo apt install prometheus
 sudo systemctl start prometheus
 sudo systemctl enable prometheus
+,,,
 
 ### 2. Install Grafana
 ```bash
