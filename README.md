@@ -84,7 +84,7 @@ A complete real-time system monitoring and alerting setup built using:
 
 ## 📫 Contact
 
-**Vedha Vithya S**  
+**VedhaVithya S**  
 Email: [vedhavithya10@gmail.com](mailto:vedhavithya10@gmail.com)  
 LinkedIn: [Vedhavithya S](https://www.linkedin.com/in/vedhavithya-s/) 
 
